@@ -1,16 +1,168 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-       <h1>Hello,Anshul Sharma This is our first website</h1>
-        
-        <script src="" async defer></script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshul Sharma | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/279a3e15e9.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <header>
+        <section id="Home">
+        <nav>
+            <div class="left">Anshul's portfolio</div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About Me</a></li>
+                    <li><a href="#Services">My Services</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftsection"><div>Hi, I am <span class="purple">Anshul Sharma</span></div>
+            <div>and I am a passionate</div>
+            <span id="element"></span>
+
+            </div>
+            <div class="rightsection"><img src="back.png" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['UI/UX','Android Developer','Web Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+      </section>
+      <!-- ---------------About---------------- -->
+      <section id="About">
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="prog.png">
+                </div>
+                <div class="aboutcol2">
+                    <h1 class="subtitle" >About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores accusamus, ut eum amet ullam velit. Enim minima vero aperiam soluta nemo quasi deserunt, voluptas perspiciatis mollitia doloremque fuga reprehenderit culpa exercitationem dolor tempora sit tenetur laboriosam debitis nulla repellat! Quam optio corrupti suscipit iure facilis nisi aliquam magnam nemo minima?
+                    </p>
+                    <div class="tabtitles">
+                        <p class="tablinks activelink" onclick="opentab('Skills')">Skills</p>
+                        <p class="tablinks" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tabcontents activetabs" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>App Development</span><br>Web/App Development</li>
+                            <li><span>Web Development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="Education">
+                        <ul>
+                            <li><span>2023</span><br>B-Tech from GLA University</li>
+                            <li><span>2021</span><br>Intermediate from RPM Public School</li>
+                            <li><span>2019</span><br>High School from RPM Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ------------------------Services----------------------- -->
+<section id="Services">
+<div id="services">
+    <div class="container">
+        <h1 class="subtitles">My Services</h1>
+        <div class="serviceslist">
+            <div>
+                <i class="fa-solid fa-code adjust"></i>
+                <h2 class="adjust">UI/UX</h2>
+                <p class="adjust">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores quas, dolores nulla iste id.</p>
+                <a href="#" class="adjust">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple adjust"></i>
+                <h2 class="adjust">App Development</h2>
+                <p class="adjust">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores quas, dolores nulla iste id.</p>
+                <a href="#" class="adjust">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios adjust"></i>
+                <h2 class="adjust">Web Development</h2>
+                <p class="adjust">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores quas, dolores nulla iste id.</p>
+                <a href="#" class="adjust">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- ---------------------------Contact--------------------------------- -->
+<section id="Contact">
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contactleft">
+                <h1 class="Subtitles adjust">Contact me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> as5981067@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i> 9084724010</p>
+                <div class="socialicons adjust">
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/anshul_sharma_18_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="" class="btn btn2 ">Download CV</a>
+            </div>
+            <div class="contactright">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Enter your Name" required>
+                    <input type="email" name="Email" placeholder="Enter your Email" required>
+                    <textarea type="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn1 btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy anshulshaarma.com | All rights reserved</p>
+    </div>
+</div>
+</section>
+    <script>
+        var tablinks= document.getElementsByClassName("tablinks")
+        var tabcontents= document.getElementsByClassName("tabcontents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("activelink");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("activetabs");
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabname).classList.add("activetabs")
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
 </html>
